@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+
+        <link rel="icon" href="calculator-icon.png">
+        <link rel="stylesheet" href="task-3.css">
+        <script src="task-3.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="unselectable" id="header">
+                <p>Standard</p>
+                <img id="pfp" src="pfp.jpeg" alt="ACCOUNT">
+            </div>
+
+            <div id="display">
+                <p id="expression-record"></p>
+                <input autocomplete="off" id="expression" type="text">
+            </div>
+
+            <div id="input-panel">
+                <div class="button unselectable mode">
+                    Switch Mode
+                </div>
+                <div class="button unselectable operation" id="all-clear">
+                    AC
+                </div>
+                <div class="button unselectable operation" id="backspace">
+                    <img src="backspace-icon.png" style="max-width: 50%;">
+                </div>
+                <div class="button unselectable writable operation" id="division">
+                    ÷
+                </div>
+                <div class="button unselectable writable number">
+                    7
+                </div>
+                <div class="button unselectable writable number">
+                    8
+                </div>
+                <div class="button unselectable writable number">
+                    9
+                </div>
+                <div class="button unselectable writable operation">
+                    ×
+                </div>
+                <div class="button unselectable writable number">
+                    4
+                </div>
+                <div class="button unselectable writable number">
+                    5
+                </div>
+                <div class="button unselectable writable number">
+                    6
+                </div>
+                <div class="button unselectable writable operation">
+                    -
+                </div>
+                <div class="button unselectable writable number">
+                    1
+                </div>
+                <div class="button unselectable writable number">
+                    2
+                </div>
+                <div class="button unselectable writable number">
+                    3
+                </div>
+                <div class="button unselectable writable operation">
+                    +
+                </div>
+                <div class="button unselectable writable operation" id="decimal-point">
+                    .
+                </div>
+                <div class="button unselectable writable number">
+                    0
+                </div>
+                <div style="grid-column: span 2;" class="button unselectable operation" id="equals">
+                    =
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

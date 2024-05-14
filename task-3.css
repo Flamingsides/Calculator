@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Antipasto-Pro-Regular";
+    src: url("antipasto.regular.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: "Antipasto-Pro-Light";
+    src: url("antipasto.light.ttf") format(truetype);
+}
+
+body {
+    background-color: #151515;
+    color: white;
+    font-family: Antipasto-Pro-Light;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#main {
+    box-shadow: 2px 2px 5px 0px grey;
+    border-radius: 10px;
+    margin: auto;
+
+    background-color: #202020;
+
+    @media only screen and (min-width: 320px) {
+        width: 80%;
+        height: 500px;
+    }
+
+    @media only screen and (min-width: 750px){
+        width: 60%;
+        height: 60vh;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        width: 400px;
+        height: 500px;
+    }
+
+    div {
+        width: 100%;
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+    }
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10%;
+    padding: 0% 5%;
+    
+    #pfp {
+        border: 1px solid black;
+        height: 70%;
+        border-radius: 100%;
+    }
+}
+
+#display {
+    height: 20%;
+    background-color: #303030;
+
+    #expression-record {
+        position: absolute;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 10px;
+        text-align: right;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    #expression {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: #303030;
+
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 540;
+        font-size: xx-large;
+        text-align: right;
+        padding: 5%;
+    }
+}
+
+#input-panel {
+    display: grid;
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+    height: 70%;
+
+    padding: 2%;
+    gap: 3%;
+}
+
+.button {
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0.5px #101010;
+    /* box-shadow: 1px 1px grey; */
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation, .mode {
+    background-color: #303030;
+}
+
+.mode {
+    text-align: center;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #404040;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  }
